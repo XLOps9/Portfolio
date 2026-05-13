@@ -12,34 +12,44 @@
 </head>
 <body>
   <header>
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Primary navigation">
       <div class="container">
-        <a href="index.html" class="logo">
+        <a href="index.html" class="logo" aria-label="Return to home">
           <img src="assets/logo.svg" alt="Nick McKinnon's logo" class="site-logo">
         </a>
         <ul class="nav-menu">
-          <li><a href="index.html#home">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="games.html">Games</a></li>
           <li><a href="certifications.html">Certifications</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
   <main>
-    <section class="site-banner" role="img" aria-label="Nick McKinnon - Cyber Security Student"></section>
+    <section class="site-banner" role="img" aria-label="Contact banner">
+    </section>
 
-    <section class="container" style="padding:4rem 20px; max-width:800px;">
+    <section class="container contact-page">
       <h2>Contact Me</h2>
-      <p>If you'd like to get in touch, email me or use the form below.</p>
+      <p>If you'd like to get in touch, email me or use the form below. I respond best to project questions, collaboration requests, and internship opportunities.</p>
 
-      <div class="project-card" style="background:transparent; box-shadow:none; padding:0;">
-        <h3>Email</h3>
-        <p><a href="mailto:nickmckinnon08@gmail.com" class="cta-button">nickmckinnon08@gmail.com</a></p>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Email</h3>
+          <p><a href="mailto:nickmckinnon08@gmail.com">nickmckinnon08@gmail.com</a></p>
+        </div>
+        <div class="project-card">
+          <h3>Resume</h3>
+          <p><a href="images/My%20resume.pdf" target="_blank" rel="noopener noreferrer" class="cta-button">Open Resume PDF</a></p>
+        </div>
+      </div>
 
-        <h3 style="margin-top:2rem">Quick Message</h3>
+      <div class="project-card contact-form-card">
+        <h3>Quick Message</h3>
         <form action="https://formspree.io/f/your-form-id" method="POST">
           <label for="name">Name</label>
           <input id="name" name="name" type="text" required>
@@ -53,31 +63,15 @@
           <button type="submit" class="cta-button">Send Message</button>
         </form>
       </div>
-
-      <hr style="margin:3rem 0; border-color:rgba(150, 47, 209, 0.89);">
-
-      <h3>Resume</h3>
-      <div style="margin:2rem 0; text-align:center;">
-        <a href="images/My%20resume.pdf"
-           target="_blank"
-           rel="noopener noreferrer"
-           download="Nick_McKinnon_Resume.pdf"
-           class="resume-link">
-          <img src="assets/resume.png"
-               alt="Nick McKinnon's Resume - Click to Download"
-               style="max-width:280px; width:100%; height:auto; border-radius:16px; border:2px solid var(--accent-cyan); box-shadow:var(--glow-cyan), var(--glow-pink); transition:all 0.4s ease;">
-          <p style="margin-top:1.2rem; font-size:1.2rem; color:var(--accent-cyan); text-shadow:0 0 12px var(--accent-cyan); font-weight:500;">
-            Click the glowing resume to view / download PDF
-          </p>
-        </a>
-      </div>
-      <!-- embedded PDF viewer -->
-      <div style="margin:2rem 0; text-align:center;">
-        <iframe src="images/My%20resume.pdf" width="100%" height="600" style="border:1px solid #ccc;">
-          <p>Your browser does not support PDFs. <a href="images/My%20resume.pdf">Download the PDF</a>.</p>
-        </iframe>
-      </div>    </section>
+    </section>
   </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>Return <a href="index.html">Home</a> · <a href="about.html">About</a> · <a href="projects.html">Projects</a> · <a href="games.html">Games</a> · <a href="certifications.html">Certifications</a> · <a href="contact.html">Contact</a></p>
+      <p>© 2026 Nick McKinnon · Designed for OSTC Web Design class.</p>
+    </div>
+  </footer>
 
 </body>
 </html>

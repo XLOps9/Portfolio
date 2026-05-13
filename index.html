@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio website">
-    <title>Portfolio</title>
+    <meta name="description" content="Nick McKinnon - Portfolio website featuring web development, cybersecurity, and digital artifacts.">
+    <title>Nick McKinnon — Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
@@ -13,13 +13,16 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Primary navigation">
             <div class="container">
-                <a href="index.html" class="logo"><img src="assets/logo.svg" alt="Nick McKinnon's logo" class="site-logo"></a>
+                <a href="index.html" class="logo" aria-label="Return to home">
+                    <img src="assets/logo.svg" alt="Nick McKinnon logo" class="site-logo">
+                </a>
                 <ul class="nav-menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="games.html">Games</a></li>
                     <li><a href="certifications.html">Certifications</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -28,41 +31,58 @@
     </header>
 
     <main>
-        <!-- Site banner: image-only -->
-        <section id="home" class="site-banner" role="img" aria-label="Nick's Portfolio banner">
+        <section class="site-banner" role="img" aria-label="Home banner with neon grid">
         </section>
 
-        <section id="about" class="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>As lead programmer for Waterford Robotics Team 3098, I thrive in high-pressure environments, specializing in coding, system integration, and rapid problem-solving. I’m also enrolled in OSTC-NE’s programming course, where I explore cybersecurity and AI with a mindset that challenges conventional thinking. My leadership experience as Senior Patrol Leader of Troop 810 has taught me to lead with integrity and build strong teams. Whether behind a keyboard or in the field, I’m driven to innovate, support others, and leave every system better than I found it.
-</p>
-            </div>
-        </section>
-
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2>Projects</h2>
-                <div class="project-grid">
-                    <div class="project-card">
-                        <h3>BPA website</h3>
-                        <p>Developed a responsive website for the BPA organization using HTML, CSS, and JavaScript. <a href="https://nebpa.ostcse.org/#" target="_blank" rel="noopener">Visit the live site</a>.</p>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Cybersecurity · Web Design · Digital Leadership</p>
+                    <h1>Hi, I’m Nick McKinnon.</h1>
+                    <p>I’m a high school student at OSTC building websites, games, and cyber learning tools. My work includes real client websites, Hack Club game development, and verified learning through Credly badges.</p>
+                    <div class="hero-actions">
+                        <a href="about.html" class="cta-button">About Me</a>
+                        <a href="projects.html" class="cta-button">Explore Projects</a>
+                        <a href="contact.html" class="cta-button">Contact Me</a>
                     </div>
-                    <div class="project-card">
-                        <h3>Sprig Game</h3>
-                        <p>An interactive game created with Hack Club’s Sprig platform. <a href="https://sprig.hackclub.com/share/TSCdWn1MRWPZ1G38MTri" target="_blank" rel="noopener">Play it here</a>.</p>
-                    </div>
-                    </div>
-                    <div class="project-card">
-                        <h3>Code.org Game</h3>
-                        <p>A fun interactive game built using Code.org’s Game Lab. <a href="https://studio.code.org/projects/gamelab/6963dc89-6ed7-4b64-9340-e87f042bf52e" target="_blank" rel="noopener">Play it here</a>.</p>
-                    </div>
+                    <p class="disclaimer">This portfolio site was designed and developed by Nick McKinnon as a learning experience in Web Design class during high school.</p>
+                </div>
+                <div class="hero-image-card">
+                    <img src="images/banner.png" alt="Cyber-themed portfolio artwork with neon grid and circuitry">
                 </div>
             </div>
         </section>
 
+        <section class="digital-artifacts">
+            <div class="container">
+                <h2>Featured Digital Artifacts</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>BPA Website</h3>
+                        <p>Created a responsive website for the Nebraska BPA chapter using HTML, CSS, and JavaScript. This live project demonstrates my ability to design for an organization and maintain clear navigation.</p>
+                        <a href="https://nebpa.ostcse.org/#" target="_blank" rel="noopener noreferrer" class="cta-button">View Live Site</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Hack Club Sprig Game</h3>
+                        <p>Built an original game with Hack Club Sprig outside classroom assignments. I learned game design, iterative testing, and creative coding while building this artifact.</p>
+                        <a href="https://sprig.hackclub.com/share/TSCdWn1MRWPZ1G38MTri" target="_blank" rel="noopener noreferrer" class="cta-button">Play the Game</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Code.org Game</h3>
+                        <p>Designed an interactive game using Code.org Game Lab to sharpen my logic and animation skills. This artifact shows how I make learning fun and accessible.</p>
+                        <a href="https://studio.code.org/projects/gamelab/6963dc89-6ed7-4b64-9340-e87f042bf52e" target="_blank" rel="noopener noreferrer" class="cta-button">View Demo</a>
+                    </div>
+                </div>
+                <p class="section-note">More artifacts, certifications, and complete project descriptions are available on the Projects, Games, and Certifications pages.</p>
+            </div>
+        </section>
     </main>
 
-
+    <footer>
+        <div class="container footer-content">
+            <p>Return <a href="index.html">Home</a> · <a href="about.html">About</a> · <a href="projects.html">Projects</a> · <a href="games.html">Games</a> · <a href="certifications.html">Certifications</a> · <a href="contact.html">Contact</a></p>
+            <p>© 2026 Nick McKinnon · Designed for OSTC Web Design class.</p>
+        </div>
+    </footer>
 </body>
 </html>

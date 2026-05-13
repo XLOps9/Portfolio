@@ -12,16 +12,17 @@
 </head>
 <body>
   <header>
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Primary navigation">
       <div class="container">
-        <a href="index.html" class="logo">
+        <a href="index.html" class="logo" aria-label="Return to home">
           <img src="assets/logo.svg" alt="Nick McKinnon's logo" class="site-logo">
         </a>
         <ul class="nav-menu">
-          <li><a href="index.html#home">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#projects">Projects</a></li>
-          <li><a href="certifications.html">Certifications</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="certifications.html" aria-current="page">Certifications</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -29,13 +30,7 @@
   </header>
 
   <main>
-    <!-- Anime-style cyberpunk banner -->
-    <section class="site-banner" role="img" aria-label="Cyberpunk anime certifications banner">
-      <!-- Optional overlay text if you want -->
-      <!-- <div class="banner-content">
-        <h1>Certifications</h1>
-        <p>Verified skills in neon-lit progression</p>
-      </div> -->
+    <section class="site-banner" role="img" aria-label="Certifications banner">
     </section>
 
     <section class="container" style="padding: 4rem 20px;">
@@ -45,39 +40,36 @@
       <div class="project-grid">
         <div class="project-card">
           <h3>Credly Profile</h3>
-          <p>Welcome to my Credly profile!</p>
-          <p>
-            <a class="cta-button" 
-               href="https://www.credly.com/users/nick-mckinnon.8f991544" 
-               target="_blank" 
-               rel="noopener noreferrer">
-              Enter Credly Matrix
-            </a>
-          </p>
+          <p>Verified skill badges for cybersecurity, professional learning, and web development. This profile is the central hub for earned credentials.</p>
+          <a class="cta-button" href="https://www.credly.com/users/nick-mckinnon.8f991544" target="_blank" rel="noopener noreferrer">View Credly Profile</a>
         </div>
 
-        <!-- Example: Add individual badges here once you get embed codes or images from Credly -->
-        <!-- 
         <div class="project-card">
-          <h3>AWS Certified Developer</h3>
-          <div style="text-align:center; margin:1.5rem 0;">
-            <!-- Paste Credly embed code here -->
-            <!-- OR static image with glow: -->
-            <!-- <img src="path/to/your-badge.png" alt="Badge" style="max-width:180px; border-radius:12px; box-shadow: 0 0 25px rgba(0,240,255,0.6);"> -->
-          </div>
-
-
+          <h3>freeCodeCamp Evidence</h3>
+          <p>Completed responsive web design practice outside of Web Lab, including a tribute page and survey project. This artifact proves independent learning and coding persistence.</p>
         </div>
 
+        <div class="project-card">
+          <h3>OSTC Cybersecurity Learning</h3>
+          <p>Documented classroom work in programming and cybersecurity. This artifact connects my course learning to practical digital skills.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Resume PDF</h3>
+          <p>Downloadable resume with skills, projects, and certifications organized for career-ready review.</p>
+          <a class="cta-button" href="images/My%20resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
+        </div>
       </div>
 
-      <hr style="margin:3rem 0; border-color:rgba(150, 47, 209, 0.89);">
-
-      <p style="text-align:center; color: var(--text-muted);">
-        Want individual glowing badge embeds? Grab the embed code or image from each badge on your Credly profile (click "Share" → "Embed"), and paste it into new .project-card divs above.
-      </p>
+      <p class="section-note">The portfolio uses these digitized credentials to show 10+ artifacts across the site, strengthening evidence of learning and growth.</p>
     </section>
   </main>
 
+  <footer>
+    <div class="container footer-content">
+      <p>Return <a href="index.html">Home</a> · <a href="about.html">About</a> · <a href="projects.html">Projects</a> · <a href="games.html">Games</a> · <a href="certifications.html">Certifications</a> · <a href="contact.html">Contact</a></p>
+      <p>© 2026 Nick McKinnon · Designed for OSTC Web Design class.</p>
+    </div>
+  </footer>
 </body>
 </html>
